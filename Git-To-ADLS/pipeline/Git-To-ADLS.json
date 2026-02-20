@@ -109,7 +109,7 @@
 												"type": "DatasetReference",
 												"parameters": {
 													"p_file_name": {
-														"value": "@item().name",
+														"value": "@item().download_url",
 														"type": "Expression"
 													}
 												}
