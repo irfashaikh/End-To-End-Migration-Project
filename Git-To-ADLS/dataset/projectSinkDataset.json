@@ -1,0 +1,20 @@
+{
+	"name": "projectSinkDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedServiceDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "git",
+				"fileSystem": "migrationproject"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

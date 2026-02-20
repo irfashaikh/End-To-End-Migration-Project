@@ -1,0 +1,18 @@
+{
+	"name": "gitSourceDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gitLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/repos/irfashaikh/End-To-End-Migration-Project/contents/Raw_Source"
+			}
+		},
+		"schema": {}
+	}
+}
