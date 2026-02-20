@@ -62,7 +62,7 @@
 								},
 								"ifTrueActivities": [
 									{
-										"name": "Copy data1",
+										"name": "Copy data",
 										"type": "Copy",
 										"dependsOn": [],
 										"policy": {
@@ -118,7 +118,13 @@
 										"outputs": [
 											{
 												"referenceName": "projectSinkDataset",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"p_file_name": {
+														"value": "@item().name",
+														"type": "Expression"
+													}
+												}
 											}
 										]
 									}
